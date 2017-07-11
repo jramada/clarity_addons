@@ -1,0 +1,8 @@
+<p></p>
+<div *ngFor="let option of options; let i=index" class="form-group row" style="margin-right: 4px;
+    margin-left: 4px;">
+    <div class="checkbox-inline">
+        <input type="checkbox" id="{{i}}" (click)="toggleBox(i)">
+        <label for="{{i}}">{{option.label}}</label>
+    </div>
+</div>
